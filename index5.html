@@ -88,9 +88,46 @@
             display: flex;
             margin: 0px 500px 0px 500px;
        }
-
        
-        
+       header {
+  background-color: #f5e0c0; /* cor de fundo opcional */
+  padding: 10px 40px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Container dos links */
+#links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+#links img {
+  height: 52px;
+}
+
+/* Navegação */
+#links nav {
+  display: flex;
+  gap: 30px;
+}
+
+/* Links */
+
+#links nav a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+/* Hover */
+#links nav a:hover {
+  color: #8b4513; /* marrom escuro como destaque */
+}
+       
 
     </style>
 </head>
@@ -98,12 +135,14 @@
     
     <header>
         <div id="links">
-        <img style="height: 52px;" src="./Made with insMind-amaaa.png" alt="luzes da rapunzel">
-        <a style="margin: 0px 10px 0px 1580px;" href="#Início"> <p>Início</p> </a>
-        <a style="margin: 0px 10px 0px 0px;" href="#Lembranças"> <p>Lembranças </p> </a>
-        <a style="margin: 0px 10px 0px 0px;" href="#Pessoas"> <p>Pessoas </p> </a>
+          <img src="./Made with insMind-amaaa.png" alt="luzes da rapunzel" />
+          <nav>
+            <a href="#Início">Início</a>
+            <a href="#Lembranças">Lembranças</a>
+            <a href="#Pessoas">Pessoas</a>
+          </nav>
         </div>
-    </header>
+      </header>
     
     
     <section id="Início" style="height: 600px; background-color: rgb(200, 214, 114);">
@@ -140,6 +179,7 @@
 <section id="Pessoas" style="height: 600px; background-color: rgb(200, 214, 114); display: flex; align-items: center; flex-direction: column">
     <h2 style="font-size:30px;text-align: center;">Pessoas</h2>
 <div class="Pessoas">
+    
     <img src="./38d9ec7b-41a2-413e-9849-5abb0608a6f8 - Copia.jpg"
 alt="foto minha e do Paulo"
 style="border: 5px solid rgb(0, 0, 0);
